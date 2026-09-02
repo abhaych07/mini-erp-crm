@@ -35,9 +35,7 @@ const apiRequest = async (endpoint, options = {}) => {
 // DASHBOARD
 // =========================
 
-export const getDashboard = async () => {
-    return await apiRequest("/dashboard");
-};
+export const getDashboard = async () => await apiRequest("/dashboard/overview");
 
 
 // =========================
